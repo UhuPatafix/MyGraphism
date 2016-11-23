@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maxime.tpandroid_version3.MainActivity">
+
+
+    <ImageView
+        android:layout_width="1000dp"
+        android:layout_height="1000dp"
+        android:background="@mipmap/nuage4"
+        android:alpha="0.5"/>
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome on MyAirPollution"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="15dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        android:textSize="25sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/bluetooth_button"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/intro"
+        android:background="@drawable/rounded_button"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:elevation="0dp" />
+
+    <Button
+        android:id="@+id/map_activity_button"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bluetooth_button"
+        android:background="@drawable/rounded_button_map"
+        android:textSize="18sp"
+        android:layout_marginTop="55dp"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/menu_bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/bluetooth"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/bluetooth_button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/menu_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="MAP"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/map_activity_button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold" />
+
+</RelativeLayout>
+

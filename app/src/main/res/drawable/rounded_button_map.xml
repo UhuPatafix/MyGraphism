@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/map_2" />
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <corners android:bottomRightRadius="100dip"
+            android:bottomLeftRadius="100dip"
+            android:topRightRadius="100dip"
+            android:topLeftRadius="100dip"/>
+    </shape>
+</selector>

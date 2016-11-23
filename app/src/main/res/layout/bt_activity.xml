@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:transitionGroup="true">
+
+    <ImageView
+        android:layout_width="1000dp"
+        android:layout_height="1000dp"
+        android:background="@mipmap/nuage4"
+        android:alpha="0.5"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/button_bluetooth"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textview"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/rounded_button_bt"
+        android:elevation="0dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/textview2"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detected devices :"
+        android:id="@+id/textview2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:typeface="normal"
+        android:layout_below="@+id/button_bluetooth"
+        android:layout_marginLeft="15dp"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:textColor="?android:attr/textColorSecondaryActivated" />
+
+    <TextView android:text="Bluetooth Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:textSize="35dp"
+        android:layout_marginTop="15dp"
+        android:textColor="?android:attr/textColorSecondaryActivated"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ToggleButton
+        android:text="On/Off"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:id="@+id/toggleButton"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:background="@drawable/normal_button"
+        android:layout_alignBaseline="@+id/button_bluetooth"
+        android:layout_alignBottom="@+id/button_bluetooth"
+        android:layout_toLeftOf="@+id/button_bluetooth"
+        android:layout_toStartOf="@+id/button_bluetooth" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:text="Get visible"
+        android:onClick="visible"
+        android:id="@+id/buttonVisible"
+        android:background="@drawable/normal_button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:elevation="12dp"
+        android:layout_alignTop="@+id/toggleButton"
+        android:layout_toRightOf="@+id/button_bluetooth"
+        android:layout_alignBottom="@+id/toggleButton" />
+
+</RelativeLayout>
